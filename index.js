@@ -9,8 +9,8 @@ class ConditionalOperation {
     while (true) {
       if (this._areConditionsFulfilled()) {
         await this._operate()
-        await wait(this._checkInterval)
       }
+      await wait(this._checkInterval)
     }
   }
 }
